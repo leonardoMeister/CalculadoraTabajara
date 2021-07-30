@@ -37,6 +37,7 @@ namespace CalculadoraTabajara.AppConsole
                     default:
                         break;
                         //teste de atualizacao de issue
+                        //att de issue com #2
                 }
             }
 

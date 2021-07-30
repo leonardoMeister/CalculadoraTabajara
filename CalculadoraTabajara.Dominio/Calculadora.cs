@@ -8,6 +8,13 @@ namespace CalculadoraTabajara.Dominio
 {
     public class Calculadora
     {
+        List<string> listaLog;
+
+        public Calculadora()
+        {
+            listaLog = new List<string>();
+        }
+
         public double Somar(double primeiro, double segundo )
         {
             return primeiro + segundo;
@@ -18,11 +25,21 @@ namespace CalculadoraTabajara.Dominio
         }
         public double Multiplicar(double primeiro, double segundo)
         {
-            return primeiro * segundo;
+            double resultado = primeiro * segundo;
+            SalvarLog($"{primeiro} x {segundo} = {resultado}");
+            return resultado;
         }
         public double Dividir(double primeiro, double segundo)
         {
-            return primeiro / segundo;
+            double resultado = primeiro / segundo;
+            SalvarLog($"{primeiro} / {segundo} = {resultado}");
+            return resultado;
         }
+
+        public void SalvarLog(string log)
+        {
+
+        }
+
     }
 }

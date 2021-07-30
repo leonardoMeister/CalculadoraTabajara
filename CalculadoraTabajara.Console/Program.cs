@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CalculadoraTabajara.Dominio;
 
 namespace CalculadoraTabajara.AppConsole
 {
     class Program
     {
         public static string Option { get; private set; }
+        Calculadora calculadora = new Calculadora();
 
         static void Main(string[] args)
         {
-
+            
             while (true)
             {
                 string option = Menu();

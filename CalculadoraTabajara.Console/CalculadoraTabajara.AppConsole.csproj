@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalculadoraTabajara.Dominio\CalculadoraTabajara.Dominio.csproj">
+      <Project>{f3a78c5b-1f5b-4b8a-93cb-0d1c062c6a9f}</Project>
+      <Name>CalculadoraTabajara.Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

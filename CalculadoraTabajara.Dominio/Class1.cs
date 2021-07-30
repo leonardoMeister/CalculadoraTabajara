@@ -8,6 +8,7 @@ namespace CalculadoraTabajara.Dominio
 {
     public class Class1
     {
+        
 
     }
 }

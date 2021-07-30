@@ -38,6 +38,7 @@ namespace CalculadoraTabajara.AppConsole
                         break;
                         //mais um teste
                         //teste de atualizacao de issue
+                        //novo teste
                         //att de issue com #2
                 }
             }

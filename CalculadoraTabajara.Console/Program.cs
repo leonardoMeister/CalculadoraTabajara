@@ -10,11 +10,11 @@ namespace CalculadoraTabajara.AppConsole
     class Program
     {
         public static string Option { get; private set; }
-        Calculadora calculadora = new Calculadora();
+        Calculadora  calculadora = new Calculadora();
 
         static void Main(string[] args)
         {
-            
+
             while (true)
             {
                 string option = Menu();
@@ -29,12 +29,52 @@ namespace CalculadoraTabajara.AppConsole
 
                         break;
                     case "3":
-
+                        Divisao();
+                        break;
+                    case "4":
+                        Multiplicacao();
                         break;
                     default:
                         break;
                 }
             }
+
+        }
+        private static void PegarDoisValores(out double primeiro, out double segundo)
+        {
+            while (true)
+            {
+                Console.WriteLine("Informe o Primeiro valor");
+                primeiro = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Informe o segundo valor");
+                segundo = Convert.ToDouble(Console.ReadLine());
+                return;
+            }
+        }
+
+        private static void Multiplicacao()
+        {
+            double primeiro, segundo;
+            PegarDoisValores(out primeiro, out segundo);
+            
+
+
+        }
+
+        private static void Divisao()
+        {
+            double primeiro, segundo;
+            while (true)
+            {
+                PegarDoisValores(out primeiro, out segundo);
+
+                if (segundo != 0) break;
+
+                Console.Clear();
+                Console.WriteLine("O segundo valor não pode ser 0.");
+            }
+
 
         }
 

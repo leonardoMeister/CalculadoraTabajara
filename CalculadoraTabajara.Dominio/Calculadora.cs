@@ -17,11 +17,15 @@ namespace CalculadoraTabajara.Dominio
 
         public double Somar(double primeiro, double segundo )
         {
-            return primeiro + segundo;
+            double resultado = primeiro + segundo;
+            SalvarLog($"{primeiro} + {segundo} = {resultado}");
+            return resultado;
         }
         public double Subrair(double primeiro, double segundo)
         {
-            return primeiro - segundo;
+            double resultado = primeiro - segundo;
+            SalvarLog($"{primeiro} - {segundo} = {resultado}");
+            return resultado;
         }
         public double Multiplicar(double primeiro, double segundo)
         {

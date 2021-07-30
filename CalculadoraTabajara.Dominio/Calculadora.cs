@@ -42,7 +42,7 @@ namespace CalculadoraTabajara.Dominio
 
         public void SalvarLog(string log)
         {
-
+            listaLog.Add(log);
         }
 
     }

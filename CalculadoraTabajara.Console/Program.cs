@@ -12,13 +12,27 @@ namespace CalculadoraTabajara.AppConsole
 
         static void Main(string[] args)
         {
+
+            while (true)
+            {
+                string option = Menu();
+                if (option == "s") break;
+
+            }
+
+        }
+
+        public static string Menu()
+        {
             Console.WriteLine("--------MENU CALCULADORA TABAJARA-------");
             Console.WriteLine("| 1 - Fazer calculo com Adição         |");
             Console.WriteLine("| 2 - Fazer calculo com Subtração      |");
             Console.WriteLine("| 3 - Fazer calculo com Divisão        |");
             Console.WriteLine("| 4 - Fazer calculo com Multiplicação  |");
             Console.WriteLine("| 5 - Fazer vizualizar Histórico       |");
-            Option = Console.ReadLine();
+
+            return Console.ReadLine();
         }
+
     }
 }
